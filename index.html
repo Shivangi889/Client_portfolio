@@ -1,688 +1,1011 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--==================== Title ====================-->
-    <title>Ankit Malhotra's Portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
-    </noscript>
-    <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="css/aos.css?ver=1.2.0" rel="stylesheet">
-    <link href="css/main.css?ver=1.2.0" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+
+        <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/lightstyle.css" />
+
+    <!--
+    - favicon
+  -->
     <link
-    rel="stylesheet"
-    href="../static/plugins/bootstrap/css/bootstrap.min.css"
-  />
-    <noscript>
-      <style type="text/css">
-        [data-aos] {
-            opacity: 1 !important;
-            transform: translate(0) scale(1) !important;
-        }
-      </style>
-    </noscript>
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    >
+
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body id="top">
-    <header class="d-print-none">
-      <div class="container text-center text-lg-left">
-        <div class="py-3 clearfix">
-          <h1 class="site-title mb-0">Ankit Malhotra</h1>
-          <div class="site-nav">
-            <nav role="navigation">
-              <ul class="nav justify-content-center">
-<!--                 <li class="nav-item"><a class="nav-link" href="https://twitter.com/templateflip" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+  <div class="mode-container">
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="checkbox-label">
+      <i class="fa-solid fa-moon" style="color: #ecdb22;"></i>
+      <i class="fa-solid fa-sun" style="color: #ffca0a;"></i>
+      <span class="ball"></span>
+    </label>
+  </div>
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img class="profile-pic"
+              src="assets/images/avatar.jpg"
+              alt="Anurag_Kumar"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Anurag Kumar"> Ankit Malhotra</h1>
+
+            <p class="title">Aspiring Business Analyst
+
+            </p>
+
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:amalh017@ucr.edu" class="contact-link"
+                  >amalh017@ucr.edu</a
+                >
+              </div>
+            </li>
+
+          
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Hyderabad, India</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/malhotra-ankit/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            
+            <li class="social-item">
+              <a
+                href="https://github.com/MalhotraAnkit97"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            
+         
+            
+           
+
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Skills</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Education</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Experience</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>         
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>         
+            </li>
+          
+
+
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              As a Tech-Geek, I craft compelling stories from raw data, blending technical prowess with conversational finesse. I excel in 'Getting Things Done' and demystifying complexity for all. Beyond the data realm, I strum the guitar, embrace strength training, and conquer virtual realms through gaming. Welcome to my digital space, where data transforms into art, conversations become collaborations, and challenges are triumphs.
+            </p>
+      
+          </section>
+
+
+          <!-- <section class="service">
+            <h3 class="h3 service-title">What I'm doing</h3>
+
+            <ul class="service-list">
+
+              
+              <li class="service-item">
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Data Analyst</h4>
+
+                  <p class="service-item-text">
+                    With a strong foundation in DSA, I've tackled over 700 questions across various platforms, 
+                    honing my problem-solving skills. Achieving the rank of 6 on GeeksforGeeks within my institute,
+                     I've delved deep into algorithms, mastering efficient solutions. DSA is my playground for logical thinking and optimizing code for real-world applications.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title"> Aspiring Business Analyst</h4>
+
+                  <p class="service-item-text">
+                    Utilizing the MERN Stack, I've crafted impressive projects and am currently immersed in developing the Nutrify app, a Nutrition Tracker.
+                     Leveraging MongoDB for data management, Express.js for backend services, React.js for dynamic UIs, and Node.js for server-side logic, I'm creating a seamless and modern web experience for users passionate about health and nutrition.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section> -->
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Cerifications & Awards</h3>
+            <ul class="testimonials-list has-scrollbar">
+              
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                  Beta Gamma Sigma Member<br />
+                </h3>
+                <img src="assets/images/BGS Member Badge.png" alt="BGS Member Badge"  height="90"
+                width="150"
+                loading="lazy">
+                <p class="service-item-text">
+                  Inducted as lifetime member of Beta Gamma Sigma (BGS). BGS recognizes and honors the top students and all doctoral candidates from around the world in business schools accredited by The Association to Advance Collegiate Schools of Business (AACSB). </p>
+              </li>
+              
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                  Data Science Master's Certification<br />
+                </h3>
+                <img src="./images/Ankit Data Science Master's Certification.jpg" alt="Data Science Master's Certification"  height="50%"
+                width="50%"
+                loading="lazy">
+                <!-- <p class="service-item-text">
+                  Inducted as lifetime member of Beta Gamma Sigma (BGS). BGS recognizes and honors the top students and all doctoral candidates from around the world in business schools accredited by The Association to Advance Collegiate Schools of Business (AACSB). </p>
+               -->
                 </li>
-                <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/templateflip" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/templateflip" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
-                </li> -->
-                <li class="nav-item"><a class="nav-link" href="https://github.com/MalhotraAnkit97" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/malhotra-ankit/" title="Linkedin"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">Linkedin</span></a>
+              
+            
+
+            </ul>
+
+            <br>
+            
+          </section>
+          <section class="testimonials">
+            <ul class="testimonials-list has-scrollbar">
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                Machine Learning Certificate
+                  </h3>
+                  <img src="./images/Ankit-MachineLearning Certificate.jpg" alt="Ankit-MachineLearning Certificate" style="width: 60%; height: 60%;">
+              </li>
+              
+        
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  >  Data Science Capstone Certification
+                  <img src="./images/Ankit-Data Science Capstone Certification.jpg" alt="Ankit-MachineLearning Certificate" style="width: 60%; height: 60%;">
+
+                  </h3>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  > 
+                  Data Science with python certificate
+
+                  <img src="./images/Ankit-DS with python certificate.jpg" alt="Ankit-MachineLearning Certificate" style="width: 60%; height: 60%;">
+
+                  </h3>
+              </li>
+              
+              
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  > 
+                  Python for Data Science certification
+
+                  <img src="./images/Ankit-Python for DS certification.jpg" alt="Ankit-MachineLearning Certificate" style="width: 60%; height: 60%;">
+
+                  </h3>
+              </li>
+              
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  > 
+                  Tableau Certification
+              
+                  <img src="./images/Ankit-Tableau Certification.jpg" alt="Ankit-MachineLearning Certificate" style="width: 60%; height: 60%;">
+
+                </img>  </h3>
+              </li>
+            </ul>
+          </section> 
+
+      
+          
+          
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+          </div>
+
+
+        </article>
+
+          
+        <!--
+        - #Skills
+      -->
+<section>
+        <article class="skills" data-page="skills">
+          <header>
+            <h2 class="h2 article-title">Skills</h2>
+          </header>
+
+          <section>
+            <img src="https://img.icons8.com/?size=100&id=33039&format=png&color=000000" alt="AWS " style="margin: 10px;">
+            <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" alt="python" style="margin: 10px;">
+            <img src="https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000" alt="R" style=" height: 50%; width:50%; margin: 10px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Julia_Programming_Language_Logo.svg/800px-Julia_Programming_Language_Logo.svg.png" alt="Julia_Programming_Language_Logo" style="margin: 10px; height: 80px;">
+
+            <img src="./assets/images/pngwing.com.png" alt="SPSS" style="margin: 0px;">
+            <img src="./assets/images/icons/git.png" alt="Git" style="margin: 10px;">
+            <img src="./assets/images/icons/github.png" alt="GitHub" style="margin: 10px;">
+
+          
+            <img src="./assets/images/tableau.png" alt="tableau" style=" margin: 10px;">
+            <img src="https://img.icons8.com/?size=100&id=cpnGCcdUsLBP&format=png&color=000000" alt="Google Data Studio" style="margin: 10px;">
+            <img src="https://img.icons8.com/?size=100&id=70667&format=png&color=000000" alt="PowerBI" style="margin: 10px;">
+        
+
+
+            <img src="https://img.icons8.com/?size=100&id=13654&format=png&color=000000" alt="Microsoft Excel" style="margin: 0px;">
+            <img src="https://img.icons8.com/?size=100&id=13674&format=png&color=000000" alt="Microsoft word" style="  margin: 10px; ">
+            <img src="https://img.icons8.com/?size=100&id=81726&format=png&color=000000" alt="Microsoft" style=" height: 50%; width:50%;margin: 10px;">
+          
+          
+
+            <img src="https://img.icons8.com/?size=100&id=QSjnrUKYMnxO&format=png&color=000000" alt="sql" style="margin: 0px;">
+            <img src="./assets/images/aim.png" alt=" Statistical Modelling" style="margin: 10px;">
+            <img src="./assets/images/data-mining.png" alt="data-mining" style="margin: 10px;">
+          
+           
+
+          </section>
+
+          
+
+          <br><br>
+      
+          <section class="testimonials">
+            <ul class="testimonials-list has-scrollbar">
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  >
+               Statistical Modelling
+                  </h3>
+                 
+              </li>
+              
+        
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  >  Data Mining
+                 
+
+                  </h3>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  > 
+                 Machine Learning
+
+                 
+
+                  </h3>
+              </li>
+              
+              
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  > 
+                  Statistical Data Analysis
+
+                  
+
+                  </h3>
+              </li>
+              
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h3
+                    class="h3 testimonials-item-title"
+                    data-testimonials-title
+                  > 
+                  Generative AI
+
+               
+
+                  </h3>
+              </li>
+            </ul>
+          </section> 
+
+        </aesumeticle>
+      </section>
+
+
+
+        <!-- Resume -->
+
+    <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="education">
+        <header>
+          <h2 class="h2 article-title">Resume
+            <span class="resume-link"><a href="https://drive.google.com/file/d/10u0u7Uo8VVapBwfDhB3lHHTghwjsumXE/view" target="_blank" >(Link)</a></span>
+          </h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                University of California, Riverside
+              </h4>
+             
+
+              <span>2023 — Present</span>
+
+              <p class="timeline-text">
+                B.Technology in Electronics & Instrumentation
+              </p>
+              <p class="timeline-text">Concentration : Financial Analytics</p>
+            </li>
+
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">VIT University, Vellore</h4>
+
+              <span>2015 - 2019</span>
+
+              <p class="timeline-text">B.Technology in Electronics & Instrumentation</p>
+            </li>
+            
+
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+                      <h3 class="h3">Achievements</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              
+                Graduate Ambassador 
+              </h4>
+
+              <span>@ AGSM, UCR</span>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                University of California, Riverside
+              </h4>
+              <p class="timeline-text">
+              
+                Lead and succesfully completed 3 group projects on "Predictive and Prescriptive Analysis".
+
+              </p>
+
+              <span>fytfyfyu</span>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                VIT University, Vellore</h4>
+                <p class="timeline-text">
+              
+                President of Student Organization
+
+                </p>
+
+              <span>Visual Bloggers' Club</span>
+            </li>
+
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                VIT University, Vellore</h4>
+                <p class="timeline-text">
+              
+                  Represented University for one of India's biggest "Tech in medical Industry" Hack-a-thon.
+
+                </p>
+
+              <span>Tech in medical Industry (Hack-a-thon)</span>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                VIT University, Vellore</h4>
+
+         
+
+              <p class="timeline-text">
+                Published 3 reseach publications and 1 book-chapter on transfer and semi-supervised learning.</p>
+            </li>
+
+            
+          </ol>
+        </section>
+
+        </article>
+
+
+         <!-- Work -->
+
+   
+
+      <article class="resume" data-page="experience">
+        <br><br>
+        <header>
+          <h2 class="h2 article-title">Work Experience
+           
+          </h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Internship Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                AI Product Development Lead 
+              </h4>
+             
+
+              <span>Apr 2024 - Jun 2024</span>
+
+              <h3 class="timeline-text" style="color: hsl(270, 50%, 68%);">
+                We Are InPower
+              </h3>
+              <br>
+             <p class="timeline-text">• Managed end-to-end project development, including design, implementation, and continuous improvement.</p>
+              <br>
+            <p class="timeline-text">• Focused on inclusive and empathetic communication to ensure effective and sensitive interactions.</p>
+           <br>
+          </li>
+
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Aritificial Intelligence Analyst </h4>
+
+              <span>Apr 2024 - May 2024</span>
+              
+              <h3 class="timeline-text" style="color: hsl(270, 50%, 68%);">
+                iSYNC Technologies
+              </h3>
+              <br>
+
+              <p class="timeline-text">• Integrated SAP ERP S4Hana with Python, developing methodologies for AI-generated reports using Gemini-Pro LLM and Hugging-Face API.</p>
+           
+           <br>
+           <p class="timeline-text">• Analyzed critical financial and controlling modules to automate reporting and data inflow, enhancing financial transactions and internal cost management.</p>
+           
+           <br>
+          </li>
+            
+
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+                      <h3 class="h3">Work Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Data Science & Analytics Mentor  </h4>
+
+              <span>Aug'23 onwards</span>
+              
+              <h3 class="timeline-text" style="color: hsl(270, 50%, 68%);">
+                Newton School (Freelance)
+              </h3>
+              <br>
+
+              <p class="timeline-text">• Core Data Analyst at a start-up, developing a DBMS for the firm from scratch using all open source Technologies.</p>
+           
+           <br>
+           <p class="timeline-text">• Responsible for mentoring & coaching a cohort of 15 - 20 students in Data Science & analytics with Python, SQL, MS Excel, R, Tableau along with Data Warehousing and Statistics.</p>
+           
+           <br>
+          </li>
+          
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Senior Data Analyst</h4>
+
+            <span>August'22 - June'23</span>
+            
+            <h3 class="timeline-text" style="color: hsl(270, 50%, 68%);">
+              Uber | IndiumSoft Technologies
+            </h3>
+            <br>
+
+            <p class="timeline-text">•Point Lead on Uber Cash and Gift Cards with Payments and Risk team, for Uber eats, rides and logistics for US&C, EMEA & APAC regions.</p>
+         
+         <br>
+         <p class="timeline-text">•Assisted the team in extracting valuable information on all aspects of Uber Cash data in the ecosystem.</p>
+         
+         <br>
+         <p class="timeline-text">•Performed Deep-dives on top-ups of uber cash, and optimized several pipelines for the FinProd Uber Cash vertical.</p>
+         
+         <br>
+        </li>
+
+        <li class="timeline-item">
+          <h4 class="h4 timeline-item-title">Data Analyst + Back-end Developer </h4>
+
+          <span>Feb'20 - August'22</span>
+          
+          <h3 class="timeline-text" style="color: hsl(270, 50%, 68%);">
+            Financepeer (now Leo1)
+          </h3>
+          <br>
+
+          <p class="timeline-text">• Core Data Analyst at a start-up, developing a DBMS for the firm from scratch using all open source Technologies.</p>
+       
+       <br>
+       <p class="timeline-text">• Created a customized DBMS for the entire firm accross 4 different products along with 100+ Dashboards and Visualizations.</p>
+       
+       <br>
+       <p class="timeline-text">• Developed, optimized & reconciled amortization + scheduling algorithm for several different types of Financial products</p>
+       
+       <br>
+       <p class="timeline-text">• Developed an OCR system for automating the process of data entry through financial & KYC documents with 85% + Accuracy.</p>
+       
+       <br>
+       <p class="timeline-text">• Developed and Integrated a CRM system from scratch for internal team members, resulting in smoother transition of workflow from one team to another.</p>
+       
+       <br>
+      </li>
+          </ol>
+        </section>
+
+        </article>
+
+        <!--
+        - #Projects
+      -->
+
+        <article class="portfolio" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
                 </li>
               </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="page-content">
-      <div class="container">
-<div class="cover shadow-lg bg-white">
-  <div class="cover-bg p-3 p-lg-4 text-white">
-    <div class="row">
-      <div class="col-lg-4 col-md-5">
-        <div class="avatar hover-effect bg-white shadow-sm p-1"><img src="images/avatar.jpg" width="280" height=300"/></div>
-      </div>
-      <div class="col-lg-8 col-md-7 text-center text-md-start">
-        <h2 class="h1 mt-2" data-aos="fade-left" data-aos-delay="0">Ankit Malhotra</h2>
-        <p data-aos="fade-left" data-aos-delay="100">Data Analyst | Aspiring Business Analyst</p>
-        <div class="d-print-none" data-aos="fade-left" data-aos-delay="200"><a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="Ankit_Resume.docx" target="_blank">Download Resume</a><a class="btn btn-success shadow-sm mt-1" href="#contact">Hire Me</a></div>
-      </div>
-    </div>
-  </div>
+            </div>
 
-  <!--==================== ABOUT ====================-->
-  <div class="about-section pt-4 px-3 px-lg-4 mt-1">
-    <div class="row">
-      <div class="col-md-6">
-        <h2 class="h3 mb-3">About Me</h2>
-        <p class="quote">As a Tech-Geek, I craft compelling stories from raw data, blending technical prowess with conversational finesse. I excel in 'Getting Things Done' and demystifying complexity for all. Beyond the data realm, I strum the guitar, embrace strength training, and conquer virtual realms through gaming. Welcome to my digital space, where data transforms into art, conversations become collaborations, and challenges are triumphs.</p>
-      </div>
-      <div class="col-md-5 offset-md-1">
-        <div class="row mt-2">
-          <div class="col-sm-4">
-            <!-- <div class="pb-1">Age</div>
-          </div>
-          <div class="col-sm-8">
-            <div class="pb-1 text-secondary">28</div>
-          </div> -->
-          <div class="col-sm-4">
-            <div class="pb-1">Email:</div>
-          </div>
-          <div class="col-sm-8">
-            <div class="pb-1 text-secondary">amalh017@ucr.edu</div>
-          </div>
-          <div class="col-sm-4">
-            <div class="pb-1">Linkedin: </div>
-          </div>
-          <div class="col-sm-8">
-            <div class="pb-1 text-secondary"><a href="https://www.linkedin.com/in/malhotra-ankit/"> Click here </a></div>
-          </div>
-          <div class="col-sm-4">
-            <div class="pb-1">Github:</div>
-          </div>
-          <div class="col-sm-8">
-            <div class="pb-1 text-secondary"><a href="https://github.com/MalhotraAnkit97"> Click here</a> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr class="d-print-none"/>
-  <!--==================== Skill ====================-->
-  <div class="skills-section px-3 px-lg-4">
-    <h2 class="h3 mb-3">Professional Skills</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="mb-2"><span>Advanced SQL</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="mb-2"><span>Python (Conceptual & Data Science with Analytics)</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor=".skills-section" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="mb-2"><span>R & Julia</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300" data-aos-anchor=".skills-section" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="mb-2"><span>Tableau</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right" data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="mb-2"><span>Google Data Studio</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right" data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="mb-2"><span>PowerBI</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right" data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="mb-2"><span>Microsoft Excel/ PowerPoint / Word</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-success" role="progressbar" data-aos="zoom-in-right" data-aos-delay="700" data-aos-anchor=".skills-section" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="mb-2"><span>AWS (EC2, S3)</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="800" data-aos-anchor=".skills-section" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="mb-2"><span>Git</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="900" data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="mb-2"><span>SPSS</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="1000" data-aos-anchor=".skills-section" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="mb-2"><span>Node.JS</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="1100" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="mb-2"><span>ReactJS</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="1200" data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="mb-2"><span>HTML5, CSS, JavaScript</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="1300" data-aos-anchor=".skills-section" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="mb-2"><span>C/C++</span>
-          <div class="progress my-1">
-            <div class="progress-bar bg-primary" role="progressbar" data-aos="zoom-in-right" data-aos-delay="1400" data-aos-anchor=".skills-section" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/MalhotraAnkit97/Spotify_Cohort_Analysis" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/pexels-mallonymedia.jpg"
+                      alt="Nutrify"
+                      height="100"
+                      width="10"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Spotify Cohort Analysis</h3>
+
+                  <p class="project-category"></p>
+                  <span class="project-category" style="color: var(--orange-yellow-crayola);font-size:14px">MongoDB | Express.js |  Node.js | React</span>
+                  <br/>
+                  
+
+                  <p class="project-category" style="font-size:14px">
+                    
+                    This project delves into user retention and engagement on Spotify by leveraging cohort analysis. By strategically segmenting users based on their signup dates, we can uncover temporal patterns in user behavior. This valuable insight empowers us to refine user retention strategies and foster long-term user loyalty on the platform.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/MalhotraAnkit97/Classification_exploration" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Classification Exploration project.webp"
+                      alt="BlogHub"
+                      height="100"
+                      width="10"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Classification Exploration</h3>
+
+                  <p class="project-category"></p>
+                  <span class="project-category" style="color: var(--orange-yellow-crayola);font-size:14px">React | Redux-Toolkit | Tailwindcss | Appwrite</span>
+                  <br/>
+                  
+
+                  <p class="project-category" style="font-size:14px">
+                    This project embarks on a journey to explore the efficacy of various classification algorithms in predicting outcomes. It entails the implementation, meticulous tuning, and comparative analysis of different classifiers, including logistic regression, decision trees, random forests, and support vector machines (SVMs). This exploration equips us with a deeper understanding of these algorithms' strengths and weaknesses, enabling us to select the most suitable tool for a given dataset and prediction task.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/MalhotraAnkit97/HepatagonConsulting_DBMS" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/DALL·E 2024-07-Hepatagon.webp"
+                      alt="CARA"
+                      height="100"
+                      width="10"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Hepatagon Consulting DBMS</h3>
+
+                  <p class="project-category"></p>
+                  <span class="project-category" style="color: var(--orange-yellow-crayola);font-size:14px">Vanilla JavaScript | CSS | HTML </span>
+                  <br/>
+                  
+
+                  <p class="project-category" style="font-size:14px">
+                    This project meticulously designs and implements a robust database management system (DBMS) tailored specifically for Hepatagon Consulting. 
+                    It encompasses the creation of meticulously crafted database schemas, the development of efficient SQL queries, and the optimization of database performance for seamless data management and insightful analysis. This comprehensive system empowers Hepatagon Consulting to leverage its data effectively, driving informed decision-making.
+                  </p>
+                </a>
+              </li>
+
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/MalhotraAnkit97/Operation-BluePrint" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Operation BluePrint project.webp"
+                      alt="Operation BluePrint"
+                      height="80"
+                      width="120"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Operation BluePrint</h3>
+
+                  <p class="project-category"></p>
+                  <span class="project-category" style="color: var(--orange-yellow-crayola);font-size:14px">Express.js | Mailchimp API | Bootstrap</span>
+                  <br/>
+                  <p class="project-category" style="font-size:14px">
+                    Operation BluePrint transcends the realm of a simple project management tool. It is a meticulously crafted solution designed to streamline and optimize project workflows, fostering exceptional project execution and delivery. Its expansive feature set encompasses task allocation, meticulous progress tracking, seamless team collaboration, and efficient resource management. By leveraging Operation BluePrint, project teams can achieve unparalleled levels of efficiency and ensure the successful completion of projects.
+                  </p>
+                </a>
+              </li>
+
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/MalhotraAnkit97/PropertySalesData_Analysis" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/Property Sales Data Analysis.jpeg" alt="ERC-20" height="80"
+                      width="120" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">Property Sales Data Analysis</h3>
+                  <p class="project-category"></p>
+                  <span class="project-category" style="color: var(--orange-yellow-crayola);font-size:14px">The whole code is written in R, along with data cleaning.</span>
+                  <br/>
+                  <p class="project-category" style="font-size:14px">
+                    This project delves meticulously into property sales data, aiming to unveil hidden insights and illuminate trends within the real estate market. By employing a diverse array of data analysis techniques, the project strives to identify the factors that exert a significant influence on property prices and sales activity. This unearthed knowledge empowers buyers, sellers, and investors with the critical information they need to make informed decisions within the dynamic real estate landscape.           </p>
+                </a>
+              </li>
+
+
+          
+
+              
+             
+            </ul>
+          </section>
+        </article>
+
+        <!-- Contact -->
+        <article class="contact" data-page="contact">
+
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
   
-  <hr class="d-print-none"/>
-    <!--==================== Portfolio ====================-->
-    <!-- <div class="Portfolio px-3 px-lg-4">
-      <h2 class="h3 mb-4">Project Portfolio</h2>
-      <div> Here are some awesome projects that I've worked on-</div>
-      <div class="timeline">
-        <div class="timeline-card timeline-card-primary card shadow-sm">
-          <div class="card-body">
-            <div> <img src="images/frontpage_wordcloud.png" width="300" height="200"  data-aos="zoom-in-right" data-aos-delay="0" class="center"/></div> <br>
-            <div class="h5 mb-1">AI Chatbot for Non-Binary People <span class="text-muted h6"><a href="https://github.com/myasmin/Capstone-3-TripAdvisor_Review_NLP-"> (Click here for details)</a></span></div>
-            <div>Online Reviews have a huge impact on Restaurant and Cafe Businesses. Platforms like TripAdvisor play a crucial role to impact a Customer's Decision and a Restaurant's Reputation. The Reviews posted online offer both opportunities and risk, so it is always important to analyze the Sentiment of the reviewers.<br>
-              <p> This large dataset is provided by <a href="https://www.tripadvisor.com/"> @TripAdvisor</a> , and can be found in <a href="https://www.kaggle.com/datasets/inigolopezrioboo/a-tripadvisor-dataset-for-nlp-tasks"> here in Kaggle</a>. It is conducted by adapting Topic Modelling (Unsupervised Learning) for Predicting Sentiments (Supervised Learning). Due to memory allocation, for this analysis the 'Barcelona' dataset was analyzed and runtime resources used in Google Colab platform.</p></div>
-          </div>
-        </div>
-      </div>
-      <div class="timeline">
-        <div class="timeline-card timeline-card-primary card shadow-sm">
-          <div class="card-body">
-            <div><img src="images/customer_churn.jpeg" width="300" height="200"  data-aos="zoom-in-right" data-aos-delay="0" class="center"/></div> <br>
-            <div class="h5 mb-1">Hear Disease Prediction Model<span class="text-muted h6"><a href="https://github.com/myasmin/Capstone_2_Project"> (Click here for details)</a></span></div>
-            <div>Customer churn is the percentage of customers that stopped using the company's product or service during a certain time frame. It costs more to acquire new customers than it does to retain existing customers. This Business Metric helps to understand the reason behind the churn and to take effective initiatives to deal with the churn percentage.<br>
-              The goal was to find out what factors may contribute to the Churn of the customers and provide supporting analysis to build an action plan to reduce the Churn.
-              <p> This dataset is provided by <a href="https://mavenanalytics.io/"> @MavenAnalytics</a> , and can be found in <a href="https://www.kaggle.com/datasets/shilongzhuang/telecom-customer-churn-by-maven-analytics"> here in Kaggle</a></p>
-            </div>
-          </div>
-        </div>
-      <div>
- 
-      
-      </div>
-    </div>
-    <div class="timeline">
-      <div class="timeline-card timeline-card-primary card shadow-sm">
-        <div class="card-body">
-          <div><img src="images/customer_churn.jpeg" width="300" height="200"  data-aos="zoom-in-right" data-aos-delay="0" class="center"/></div> <br>
-          <div class="h5 mb-1">Breast Cancer Detection using SVM<span class="text-muted h6"><a href="https://github.com/myasmin/Capstone_2_Project"> (Click here for details)</a></span></div>
-          <div>Customer churn is the percentage of customers that stopped using the company's product or service during a certain time frame. It costs more to acquire new customers than it does to retain existing customers. This Business Metric helps to understand the reason behind the churn and to take effective initiatives to deal with the churn percentage.<br>
-            The goal was to find out what factors may contribute to the Churn of the customers and provide supporting analysis to build an action plan to reduce the Churn.
-            <p> This dataset is provided by <a href="https://mavenanalytics.io/"> @MavenAnalytics</a> , and can be found in <a href="https://www.kaggle.com/datasets/shilongzhuang/telecom-customer-churn-by-maven-analytics"> here in Kaggle</a></p>
-          </div>
-        </div>
-      </div>
-    <div>
+          <section class="mapbox" data-mapbox="">
+            <figure>
+    
 
-    </div>
-  </div>
-
-
-    </div> -->
-    <!-- <hr class="d-print-none"/> -->
-
-
-
-
-  <!--==================== Work Experience ====================-->
-  <div class="work-experience-section px-3 px-lg-4">
-    <h2 class="h3 mb-4">Work Experience</h2>
-    <div class="timeline">
-
-      <div data-aos="zoom-in-right" data-aos-delay="0" class="timeline-card timeline-card-primary card shadow-sm">
-        <div class="card-body">
-          <div class="h5 mb-1">
-            AI Product Development Lead <span class="text-muted h6">at <a href="">  We Are InPower · (Internship) </a></span></div>
-          <div class="text-muted text-small mb-2">Apr 2024 - Jun 2024 </div>
-          <div class="quote">Spearheaded the creation of an innovative AI chatbot to support non-binary individuals. Leveraging advanced Large Language Model (LLM) fine-tuning, I developed a counseling chatbot capable of empathetic and human-like interactions.</div>
-          <br>
-          <div class="quote">•Managed end-to-end project development, including design, implementation, and continuous improvement.  <br>
-            •Focused on inclusive and empathetic communication to ensure effective and sensitive interactions.<br>
-          
-          
-          </div>
-        </div>
-      </div>
-
-      <div data-aos="zoom-in-right" data-aos-delay="0" class="timeline-card timeline-card-primary card shadow-sm">
-        <div class="card-body">
-          <div class="h5 mb-1">
-           
-Aritificial Intelligence Analyst<span class="text-muted h6">  at <a href=""> iSYNC Technologies ·(Internship) </a></span></div>
-          <div class="text-muted text-small mb-2">Apr 2024 - May 2024</div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487295.07596630906!2d77.81704277696457!3d17.41213408767177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1724651387719!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
          
-          <div class="quote">• Integrated SAP ERP S4Hana with Python, developing methodologies for AI-generated reports using Gemini-Pro LLM and Hugging-Face API. <br>
-            • Analyzed critical financial and controlling modules to automate reporting and data inflow, enhancing financial transactions and internal cost management.<br>
-          
-          
-          </div>
-        </div>
-      </div>
-
-      <div data-aos="zoom-in-right" data-aos-delay="0" class="timeline-card timeline-card-primary card shadow-sm">
-        <div class="card-body">
-          <div class="h5 mb-1">Data Science & Analytics Mentor <span class="text-muted h6"> at <a href="">  Newton School (Freelance)</a> </span></div>
-          <div class="text-muted text-small mb-2">Aug'23 onwards</div>
-          <div class="quote">• Core Data Analyst at a start-up, developing a DBMS for the firm from scratch using all open source Technologies. <br>
-        
-            • Responsible for mentoring & coaching a cohort of 15 - 20 students in Data Science & analytics with Python, SQL, MS Excel, R, Tableau along with Data Warehousing and Statistics.<br>
-           </div>
-        </div>
-      </div>
-
-      <div data-aos="zoom-in-right" data-aos-delay="0" class="timeline-card timeline-card-primary card shadow-sm">
-        <div class="card-body">
-          <div class="h5 mb-1">Senior Data Analyst <span class="text-muted h6">at <a href=""> Uber | IndiumSoft Technologies </a></span></div>
-          <div class="text-muted text-small mb-2">August'22 - June'23</div>
-          <div class="quote">•Point Lead on Uber Cash and Gift Cards with Payments and Risk team, for Uber eats, rides and logistics for US&C, EMEA & APAC regions.  <br>
-            •Assisted the team in extracting valuable information on all aspects of Uber Cash data in the ecosystem.<br>
-            •Performed Deep-dives on top-ups of uber cash, and optimized several pipelines for the FinProd Uber Cash vertical.
-          </div>
-        </div>
-      </div>
-      <div data-aos="zoom-in-right" data-aos-delay="0" class="timeline-card timeline-card-primary card shadow-sm">
-        <div class="card-body">
-          <div class="h5 mb-1">Data Analyst + Back-end Developer <span class="text-muted h6"> at <a href=""> Financepeer (now Leo1)</a> </span></div>
-          <div class="text-muted text-small mb-2">Feb'20 - August'22</div>
-          <div class="quote">• Core Data Analyst at a start-up, developing a DBMS for the firm from scratch using all open source Technologies. <br>
-            • Created a customized DBMS for the entire firm accross 4 different products along with 100+ Dashboards and Visualizations. <br>
-            • Developed, optimized & reconciled amortization + scheduling algorithm for several different types of Financial products. <br>
-            • Developed an OCR system for automating the process of data entry through financial & KYC documents with 85% + Accuracy. <br>
-            • Developed and Integrated a CRM system from scratch for internal team members, resulting in smoother transition of workflow from one team to another.</div>
-        </div>
-      </div>
-
-      
-    </div>
-  </div>
-  <hr class="d-print-none"/>
-  <div class="page-break"></div>
-
-
-  <!--==================== Cerifications & Awards ====================-->
-<div class="Portfolio px-3 px-lg-4">
-  <h2 class="h3 mb-4">Cerifications & Awards</h2>
-
-  <div class="timeline">
-    <div class="timeline-card timeline-card-primary card shadow-sm">
-      <div class="card-body">
-        <div> <img src="images/BGS Member Badge.png" width="300" height="200"  data-aos="zoom-in-right" data-aos-delay="0" class="center"/></div> <br>
-        <div class="h5 mb-1">Beta Gamma Sigma Member <span class="text-muted h6"><a href="https://www.betagammasigma.org/home"> (Click here for details)</a></span></div>
-        <div class="quote">Inducted as lifetime member of Beta Gamma Sigma (BGS). BGS recognizes and honors the top students and all doctoral candidates from around the world in business schools accredited by The Association to Advance Collegiate Schools of Business (AACSB).<br>
-        </div>
-      </div>
-    </div>
-  </div>
- 
-
-
-</div>
-<hr class="d-print-none"/>
-
-<!--==================== Education ====================-->
-  <div class="education-section px-3 px-lg-4 pb-4">
-    <h2 class="h3 mb-4">Education</h2>
-    <div class="timeline">
-      <div data-aos="zoom-in-right" data-aos-delay="0" class="timeline-card timeline-card-success card shadow-sm">
-        <div class="card-body">
-          <div class="h5 mb-1"> Masters of Science in Business Analytics (GPA - 3.95/4.0)<br/><b>Concentration : Financial Analytics</b> 
-         <br/>   <span class="text-muted h6"> University of California, Riverside</span></div>
-          <div class="text-muted text-small mb-2">2023 - Present</div>
-          <div class="quote"> My coursework includes subjects such as Statistics for Business Analytics, Statistical Computing, Business Analytics for Management, Spreadsheet Modeling for Decision Making, Foundational Methods for Financial Management, and Derivatives & Asset Pricing. I began this program in 2023 and am expected to complete it soon.</div>
+         </figure>   
+         </section>
          <br>
-         <span class="text-muted h6">Achievements:</span>
-         <br> <br>
-          <div class="quote"> • Graduate Ambassador @ AGSM, UCR <br>
-            • Lead and succesfully completed 3 group projects on "Predictive and Prescriptive Analysis". <br>
-            </div>
-            <br>
-         <span class="text-muted h6">Activities and co-curricular: </span>
-         <br> <br>
-          <div class="quote">• President, AGSM Programming Club.
-            <br>
-            • Graduate Student Ambassador, Graduate Ambassadors.
-            <br>
-            • Member, Beta Gamma Sigma (Best in Business)Activities and societies.
-            <br>
-            </div>
-        
-        </div>
-      </div>
-      <div data-aos="zoom-in-right" data-aos-delay="0" class="timeline-card timeline-card-success card shadow-sm">
-        <div class="card-body">
-          <div class="h5 mb-1">B.Technology in Electronics & Instrumentation <br/><span class="text-muted h6">  VIT University, Vellore </span></div>
-          <div class="text-muted text-small mb-2">2015 - 2019</div>
-          <span class="text-muted h6">Achievements:</span>
-          <br> <br>
-           <div class="quote">• President of Student Organization called as Visual Bloggers' Club.<br>
-             • Represented University for one of India's biggest "Tech in medical Industry" Hack-a-thon. <br>
-             • Graduated with highest number of Internships in the University. <br>
-             • Published 3 reseach publications and 1 book-chapter on transfer and semi-supervised learning. <br>
-            
-            
-            </div>
-        </div>
+         <section class="contact-form">
+  
+            <h3 class="h3 form-title">Contact Form</h3>
+  
+            <form action="mailto:amalh017@ucr.edu" method="post" enctype="text/plain" class="form"  >
+  
+              <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required="" data-form-input="">
+  
+                <input type="email" name="email" class="form-input" placeholder="Email address" required="" data-form-input="">
+              </div>
+  
+              <textarea name="message" class="form-input" placeholder="Your Message" required="" data-form-input=""></textarea>
+  
+              <button class="form-btn" type="submit">
+                <ion-icon name="paper-plane" role="img" class="md hydrated" aria-label="paper plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+  
+            </form>
+  
+          </section>
+  
+        </article>
+
       </div>
      
-    </div>
-  </div>
-  <hr class="d-print-none"/>
-  <div class="Portfolio px-3 px-lg-4">
-    <h2 class="h3 mb-4">Project Portfolio</h2>
-    <div> Here are some awesome projects that I've worked on-</div>
-    <div class="timeline">
-      <div class="timeline-card timeline-card-primary card shadow-sm">
-        <div class="card-body">
-          <div> <img src="images/pexels-mallonymedia.jpg" width="300" height="200"  data-aos="zoom-in-right" data-aos-delay="0" class="center"/></div> <br>
-          <div class="h5 mb-1">Spotify Cohort Analysis
-            <span class="text-muted h6"><a href="https://github.com/MalhotraAnkit97/Spotify_Cohort_Analysis"> (Click here for details)</a></span></div>
-          <div class="quote">This project delves into user retention and engagement on Spotify by leveraging cohort analysis. By strategically segmenting users based on their signup dates, we can uncover temporal patterns in user behavior. This valuable insight empowers us to refine user retention strategies and foster long-term user loyalty on the platform.
-           </div>
-        </div>
-      </div>
-    </div>
-    <div class="timeline">
-      <div class="timeline-card timeline-card-primary card shadow-sm">
-        <div class="card-body">
-          <div><img src="images/Classification Exploration project.webp" width="300" height="200"  data-aos="zoom-in-right" data-aos-delay="0" class="center"/></div> <br>
-          <div class="h5 mb-1">Classification Exploration
-            <span class="text-muted h6"><a href="https://github.com/MalhotraAnkit97/Classification_exploration"> (Click here for details)</a></span></div>
-          <div class="quote">
-            This project embarks on a journey to explore the efficacy of various classification algorithms in predicting outcomes.
-             It entails the implementation, meticulous tuning, and comparative analysis of different classifiers, including logistic
-              regression, decision trees, random forests, and support vector machines (SVMs).
-               This exploration equips us with a deeper understanding of these algorithms' strengths and weaknesses,
-                enabling us to select the most suitable tool for a given dataset and prediction task.
+      
+    </main>
 
-       
-          </div>
-        </div>
-      </div>
-    <div>
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
 
-    
-    </div>
-  </div>
-  <div class="timeline">
-    <div class="timeline-card timeline-card-primary card shadow-sm">
-      <div class="card-body">
-        <div><img src="images/DALL·E 2024-07-Hepatagon.webp" width="300" height="200"  data-aos="zoom-in-right" data-aos-delay="0" class="center"/></div> <br>
-        <div class="h5 mb-1">Hepatagon Consulting DBMS
-          <span class="text-muted h6"><a href="https://github.com/MalhotraAnkit97/HepatagonConsulting_DBMS"> (Click here for details)</a></span></div>
-        <div class="quote">This project meticulously designs and implements a robust database management system (DBMS) tailored specifically for Hepatagon Consulting. It encompasses the creation of meticulously crafted database schemas, the development of efficient SQL queries, and the optimization of database performance for seamless data management and insightful analysis. This comprehensive system empowers Hepatagon Consulting to leverage its data effectively, driving informed decision-making.
-        </div>
-      </div>
-    </div>
-  <div>
-
-  </div>
-</div>
-<div class="timeline">
-  <div class="timeline-card timeline-card-primary card shadow-sm">
-    <div class="card-body">
-      <div><img src="images/Operation BluePrint project.webp" width="300" height="200"  data-aos="zoom-in-right" data-aos-delay="0" class="center"/></div> <br>
-      <div class="h5 mb-1">Operation BluePrint
-
-        <span class="text-muted h6"><a href="https://github.com/MalhotraAnkit97/Operation-BluePrint"> (Click here for details)</a></span></div>
-      <div class="quote">Operation BluePrint transcends the realm of a simple project management tool. It is a meticulously crafted solution designed to streamline and optimize project workflows, fostering exceptional project execution and delivery. Its expansive feature set encompasses task allocation, meticulous progress tracking, seamless team collaboration, and efficient resource management. By leveraging Operation BluePrint, project teams can achieve unparalleled levels of efficiency and ensure the successful completion of projects.
-
-      </div>
-    </div>
-  </div>
-<div>
-
-</div>
-</div>
-<div class="timeline">
-  <div class="timeline-card timeline-card-primary card shadow-sm">
-    <div class="card-body">
-      <div><img src="images/Property Sales Data Analysis.jpeg" width="300" height="200"  data-aos="zoom-in-right" data-aos-delay="0" class="center"/></div> <br>
-      <div class="h5 mb-1">Property Sales Data Analysis
-
-
-        <span class="text-muted h6"><a href="https://github.com/MalhotraAnkit97/PropertySalesData_Analysis"> (Click here for details)</a></span></div>
-      <div class="quote">
-        This project delves meticulously into property sales data, aiming to unveil hidden insights and illuminate trends within the real estate market. By employing a diverse array of data analysis techniques, the project strives to identify the factors that exert a significant influence on property prices and sales activity. This unearthed knowledge empowers buyers, sellers, and investors with the critical information they need to make informed decisions within the dynamic real estate landscape.
-      </div>
-    </div>
-  </div>
-<div>
-
-</div>
-</div>
-  </div>
-
-  <hr class="d-print-none"/>
-
-  <section id="testimonials-section" class="testimonials-section section">
-    <h2 class="section-title">Recommendations</h2>
-
-    <div
-      id="testimonials-carousel"
-      class="testimonials-carousel carousel slide"
-      data-interval="8000"
-    >
-      <!-- Indicators -->
-      <!-- <ol class="carousel-indicators">
-        <li
-          data-target="#testimonials-carousel"
-          data-slide-to="0"
-          class="active"
-        ></li>
-        <li data-target="#testimonials-carousel" data-slide-to="1"></li>
-      </ol> -->
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <blockquote class="quote">
-            <i class="fa fa-quote-left"></i>
-            <p>
-              Ankit Malhotra is an absolute powerhouse of motivation and
-              skill! Working together for 2.5 years was a joy as he
-              showcased brilliant creativity and technical prowess. Ankit
-              not only aced RDBMS optimization but also rocked a 10-month
-              project, flaunting his wizardry in algorithms and mathematics.
-              His kindness and generosity are heartwarming, and paired with
-              his stellar analytical skills, he's truly an invaluable asset.
-              Recommending Ankit is a no-brainer – he's the kind of
-              professional dreams are made of! 🚀
-            </p>
-          </blockquote>
-          <div class="source">
-            <div class="name">DebiPrasad Baral</div>
-            <div class="position">
-              Co-Founder & CTO, Financepeer (now Leo1)
-            </div>
-          </div>
-          <!--//source-->
-        </div>
-        <!--//item-->
-        <!-- <div class="item"> -->
-          <!-- <blockquote class="quote">
-            <p>
-              <i class="fa fa-quote-left"></i> Ankit Malhotra is an
-              exceptional professional, showcasing unparalleled skills in
-              problem-solving, technical execution, and leadership. His
-              dedication to academics, coupled with a passion for continuous
-              learning, sets him apart. Ankit's collaborative spirit and
-              outstanding performance in diverse projects make him an
-              invaluable asset. I wholeheartedly recommend Ankit for any
-              academic or professional endeavor; his commitment and
-              expertise speak volumes.
-            </p>
-          </blockquote>
-          <div class="source">
-            <div class="name">MohanaSundaram R.</div>
-            <div class="position">
-              Senior Assistant Professor, VIT University, SCOPE (School of
-              Computer Science Engineering)
-            </div> -->
-          <!-- </div> -->
-          <!--//source-->
-        </div>
-        <!--//item-->
-      </div>
-      <!--//carousel-inner-->
-    </div>
-    <!--//testimonials-carousel-->
-  </section>
-  <hr class="d-print-none"/>
-  <section id="contact-section" class="contact-section section">
-    <h2 class="section-title">Get in Touch</h2>
-    <div class="intro">
-      <img
-        class="profile-image"
-        src="./images/avatar.jpg"
-        alt="Ankit's profile image"
-      />
-      <div class="dialog">
-        <p >
-          I'm currently pursuing my Master's of Science in Business
-          Analytics from University of California, Riverside. Looking for
-          internships and/or Full-Time Job opportunities in Data Science,
-          Machine Learning, Business Intelligence/Analytics and Data
-          Analytics.
-        </p>
-        <p>
-          <strong class="strongs"
-            >However, I am always up for new projects and opportunities. I
-            can help with the following:</strong
-          >
-        </p>
-        <ul class="list-unstyled service-list">
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i> Consulting for
-            Data Analytics Deep Dives, Machine Learning, Artificial
-            Intelligence
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i> Database Design,
-            creation, warehousing, optimization.
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i> Educating &
-            Mentoring
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i> Web Application
-            Development
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i> Options and
-            Futures Trading (Stock Market Derivatives)
-          </li>
-          <li>
-            <i class="fa fa-check" aria-hidden="true"></i> Honestly,
-            Anything related to Tech and/or Finance!
-          </li>
-        </ul>
-        <p>
-          Drop me a line at
-          <a href="mailto:ankit.malhotra97.am@gmail.com@gmail.com"
-            >ankit.malhotra97.am@gmail.com</a
-          >
-        </p>
-        <ul class="social list-inline">
-          <li>
-            <a href="https://www.linkedin.com/in/malhotra-ankit/"
-              ><i class="fa fa-linkedin" aria-hidden="true"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://github.com/MalhotraAnkit97"
-              ><i class="fa fa-github-alt" aria-hidden="true"></i
-            ></a>
-          </li>
-        </ul>
-        <!--//social-->
-      </div>
-      <!--//diaplog-->
-    </div>
-    <!--//intro-->
-  </section>
-  <!-- <div class="contant-section px-3 px-lg-4 pb-4" id="contact">
-    <h2 class="h3 text mb-3">Contact</h2>
-    <div class="row">
-   
-      <div class="col">
-        <div class="mt-2">
-          <h3 class="h6">Address</h3>
-          <div class="pb-2 text-secondary">Hyderabad, Telangana, India </div>
-          <h3 class="h6">Phone</h3>
-          <div class="pb-2 text-secondary"> +1 951-594-6282</div>
-          <h3 class="h6">Email</h3>
-          <div class="pb-2 text-secondary">amalh017@ucr.edu</div>
-        </div>
-      </div>
-      <div class="col d-none d-print-block">
-        <div class="mt-2">
-          <div>
-            <div class="mb-2">
-              <div class="text-dark"><i class="fab fa-twitter mr-1"></i><span>https://twitter.com/templateflip</span>
-              </div>
-            </div>
-            <div class="mb-2">
-              <div class="text-dark"><i class="fab fa-facebook mr-1"></i><span>https://www.facebook.com/templateflip</span>
-              </div>
-            </div>
-            <div class="mb-2">
-              <div class="text-dark"><i class="fab fa-instagram mr-1"></i><span>https://www.instagram.com/templateflip</span>
-              </div>
-            </div>
-            <div class="mb-2">
-              <div class="text-dark"><i class="fab fa-github mr-1"></i><span>https://github.com/templateflip</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-</div></div>
-    </div>
-    <footer class="pt-4 pb-4 text-muted text-center d-print-none">
-      <div class="container">
-        <div class="my-3">
-          <div class="h4">Ankit Malhotra</div>
-          <div class="footer-nav">
-            <nav role="navigation">
-              <ul class="nav justify-content-center">
-               
-                <li class="nav-item"><a class="nav-link" href="https://github.com/MalhotraAnkit97" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/malhotra-ankit/" title="Linkedin"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">Github</span></a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-<!--         <div class="text-small">
-          <div class="mb-1">&copy; Right Resume. All rights reserved.</div>
-          <div>Design - <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
-        </div> -->
-      </div>
-    </footer>
-    <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-    <script src="scripts/aos.js?ver=1.2.0"></script>
-    <script src="scripts/main.js?ver=1.2.0"></script>
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
+
+
